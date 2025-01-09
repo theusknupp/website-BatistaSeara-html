@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: black;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Estilo do header */
+header{
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ /* Alinhando itens do header */
+ header .interface{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tamanho da logo */
+header .LogoIgreja img { 
+    max-width: 55px;
+}
+
+header .Menu-Desktop nav ul {
+list-style-type: none; /*Retirando as bolinhas da lista*/
+}
+
+header .Menu-Desktop nav ul li {
+    display: inline-block; /*Alinhar o NAV um do lado do outro*/
+    margin: 0 40px; /*Afastamento das opções*/
+} 
+
+/* Estilo do texto */
+header .Menu-Desktop nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+} 
+
+/* Haver(Mouse em cima */
+header .Menu-Desktop nav a:hover {
+    transform:scale(1.05);
+} 
+
+
+/* Estilo do botão contato*/
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .btn-contato button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+section.hero-site{
+    height: 100vh; /*100% da altura da tela*/
+    background-image: url(../imgs/BackGround2.png);
+    background-repeat: no-repeat;
+    background-size: cover; /*Cobrir todo o espaço*/
+    background-position: center;
+    color: #fff;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-BemVindo h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+/* Jogar o 'Seara' pra baixo  */
+.hero-site .txt-BemVindo h1 span{
+    display: block;
+    font-weight: 700;
+}
+
+.hero-site .txt-BemVindo p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}

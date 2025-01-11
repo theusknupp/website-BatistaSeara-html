@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .interface {
@@ -81,6 +81,7 @@ section.hero-site{
     background-size: cover; /*Cobrir todo o espaço*/
     background-position: center;
     color: #fff;
+
 }
 
 .hero-site .interface{
@@ -106,3 +107,56 @@ section.hero-site{
     font-weight: 300;
     margin: 20px 0;
 }
+
+section.Sobre-Nos {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    height: 700px;
+    background-image: url(../imgs/Banner3.png); /*Foto fora da pasta*/
+    background-position: center; /*Centraliuzar image*/
+    background-size: cover; /*Cubrir todo espaço*/
+    background-repeat: no-repeat; 
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed; /*Imagem ficar parada */
+} 
+
+.Sobre-Nos > .overlay { /* '>' para dizer que quer editar a classe overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* O position dos Z-INDEX precisam ser diferentes nas classes */
+}
+
+.Sobre-Nos > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /*Posiciona o texto*/
+    flex-direction: column; /*Coloca o texto um em baixo do outro */
+    z-index: 2;
+    position: relative;
+}
+
+.Sobre-Nos h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.Sobre-Nos h3 span {
+    display: block;
+    font-weight: 700;
+    color: bisque;
+}
+
+.Sobre-Nos p {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300px;
+}
+

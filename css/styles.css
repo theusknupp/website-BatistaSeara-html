@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #e3e3e3;
 }
 
 .interface {
@@ -31,7 +31,7 @@ header{
 
 /* Tamanho da logo */
 header .LogoIgreja img { 
-    max-width: 55px;
+    max-width: 60px;
 }
 
 header .Menu-Desktop nav ul {
@@ -100,6 +100,7 @@ section.hero-site{
 .hero-site .txt-BemVindo h1 span{
     display: block;
     font-weight: 700;
+    color: bisque;
 }
 
 .hero-site .txt-BemVindo p{
@@ -160,3 +161,106 @@ section.Sobre-Nos {
     font-weight: 300px;
 }
 
+/* Estilo da agenda  */
+section.AgendaSemanal {
+    padding: 80px;
+}
+
+.AgendaSemanal .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.AgendaSemanal .itens-container .img-itens img {
+    max-width: 480px;
+    max-height: 367px;
+    border-radius: 40px;
+}
+
+.AgendaSemanal .itens-container .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+    margin-bottom: 20px;
+
+}
+.itens-container .txt-itens h3 span {
+    font-weight: 600;
+}
+
+.img-itens {
+    border-radius: 40px;
+    height: 367px;
+    box-shadow: rgba(1, 60, 128, 0.4) 5px 5px, 
+    rgba(1, 60, 128, 0.3) 10px 10px, 
+    rgba(1, 60, 128, 0.2) 15px 15px,
+    rgba(1, 60, 128, 0.1) 20px 20px,
+    rgba(1, 60, 128, 0.05) 25px 25px;
+}
+
+/* Estilo dos botões de contato */
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block; /*Botão e texto lado a lado*/
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle; /*Alinhando blocos*/
+} 
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    font-weight: 200;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .icons-contato button p {
+    font-size: 16px;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: 0.8s;
+}
+
+.contato .icons-contato button i {
+    font-size: 24px;
+}
+
+.contato .icons-contato button:hover {
+    background-color: rgba(0, 0, 0, 0.733)
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}

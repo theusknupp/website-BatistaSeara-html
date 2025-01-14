@@ -5,6 +5,18 @@
     font-family: "Poppins", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section.Sobre-Nos, section.AgendaSemanal {
+    scroll-margin-top: 100px; /* Espaço acima do início da rolagem */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #e3e3e3;
 }
@@ -115,7 +127,7 @@ section.Sobre-Nos {
     height: 700px;
     background-image: url(../imgs/Banner3.png); /*Foto fora da pasta*/
     background-position: center; /*Centraliuzar image*/
-    background-size: cover; /*Cubrir todo espaço*/
+    background-size: cover; /*Cobrir todo espaço*/
     background-repeat: no-repeat; 
     position: relative;
     color: #fff;
@@ -194,7 +206,7 @@ section.AgendaSemanal {
 .img-itens {
     border-radius: 40px;
     height: 367px;
-    box-shadow: rgba(1, 60, 128, 0.4) 5px 5px, 
+    box-shadow: rgba(47, 100, 160, 0.4) 5px 5px, 
     rgba(1, 60, 128, 0.3) 10px 10px, 
     rgba(1, 60, 128, 0.2) 15px 15px,
     rgba(1, 60, 128, 0.1) 20px 20px,
@@ -205,7 +217,7 @@ section.AgendaSemanal {
 section.contato {
     background-color: #fff;
     padding: 80px 0;
-
+    padding-bottom: 8;
 }
 
 .txt-contato, .icons-contato {
@@ -213,6 +225,7 @@ section.contato {
     width: 50%;
     margin-right: -4px;
     vertical-align: middle; /*Alinhando blocos*/
+    padding-bottom: 70px;
 } 
 
 .contato .txt-contato h3{
@@ -250,7 +263,7 @@ section.contato {
     background-color: transparent;
     cursor: pointer;
 
-    transition: 0.8s;
+    transition: 0.3s;
 }
 
 .contato .icons-contato button i {
@@ -258,9 +271,65 @@ section.contato {
 }
 
 .contato .icons-contato button:hover {
-    background-color: rgba(0, 0, 0, 0.733)
+    background-color: rgba(0, 0, 0, 0.87)
 }
 
 .contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
     color: #fff;
 }
+
+/* Seção Celulas */
+
+section.Celulas {
+    padding: 80px;
+    background-color: #01121F;
+}
+
+.Celulas .nossas-celulas h3 {
+    color: #fff;
+    padding-top: 30px;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.instrucoes2 {
+    padding-right: 30px;
+}
+
+.instrucoes {
+    padding-left: 30px;
+}
+
+.instrucoes2, .instrucoes {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+/* Alinhando imagem e texto lado a lado da box */
+.instrucoes2 .instru-box, .instrucoes .instru-box {
+    background-color: #ffffffbe;
+    display: flex;  
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, 
+    rgba(255, 255, 255, 0.3) -10px 10px, 
+    rgba(255, 255, 255, 0.2) -15px 15px, 
+    rgba(2255, 255, 255, 0.1) -20px 20px, 
+    rgba(255, 255, 255, 0.05) -25px 25px;
+    
+}
+
+.instrucoes2 .instru-box img, .instrucoes .instru-box img {
+    max-width: 80px;
+}
+

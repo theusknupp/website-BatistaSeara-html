@@ -1,0 +1,201 @@
+@media screen and (max-width: 950px) { /* Momento em que o menu se quebra */
+    header .Menu-Desktop, header .btn-contato{
+        display: none; /*Escondendo menu*/
+    }
+}
+    
+@media screen and (max-width: 900px) { 
+    /* Responsivo da Hero */
+    .hero-site .txt-BemVindo h1{
+        font-size: 2.5em;
+        line-height: 40px;
+        font-weight: 200;
+    }
+
+    /* Jogar o 'Seara' pra baixo  */
+    .hero-site .txt-BemVindo h1 span{
+        display: block;
+        font-weight: 700;
+        color: bisque;
+    }
+
+    .hero-site .txt-BemVindo p{
+        font-size: 20px;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+
+    /* Responsivo da Agenda */
+
+    .AgendaSemanal .itens-container {
+        flex-direction: column;
+    }
+
+    .AgendaSemanal .itens-container .img-itens img {
+        width: 260px;
+        max-height: 183px;
+        border-radius: 40px;
+    }
+
+    .AgendaSemanal .itens-container .txt-itens p {
+        margin-bottom: 30px;
+    }
+
+    .AgendaSemanal .itens-container .txt-itens {
+      text-align: center;
+    }
+
+    .img-itens {
+        height: 183px;
+    }
+
+    .AgendaSemanal .itens-container .item-1 {
+        order: 1;
+    }
+    .AgendaSemanal .itens-container .item-2 {
+        order: 0
+    }
+
+    .AgendaSemanal .itens-container .txt-itens span1 {
+        display: block;
+    }
+
+    /* Responsivo dos botões de contato */
+    section.contato {
+        background-color: #fff;
+        padding: 80px 0;
+        padding-bottom: 8;
+    }
+
+    .txt-contato, .icons-contato {
+        display: block; /*Botão e texto lado a lado*/
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+    } 
+
+    .contato .txt-contato h3{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    .contato .txt-contato span {
+        display: block;
+    }
+
+    .contato .icons-contato button p {
+        font-size: 16px;
+    }
+
+    .contato .icons-contato button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+        
+        width: 100%;
+        height: 60px;
+        margin: 0 auto 20px auto;
+        border: 2px solid black;
+        border-radius: 4px;
+        
+        background-color: transparent;
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
+    /* Responsivo sobre nós */
+
+    .Sobre-Nos h3{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    .Sobre-Nos p {
+        margin: 20px 0;
+        font-size: 16px;
+        font-weight: 300px;
+    }
+
+    /* Responsivo células */
+
+    section.Celulas {
+        padding: 80px;
+        background-color: #01121F;
+    }
+
+    .Celulas .nossas-celulas h3 {
+        color: #fff;
+        padding-top: 30px;
+        font-size: 3.5em;
+        font-weight: 600;
+        line-height: 50px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .instrucoes2 {
+        padding-right: 0px;
+    }
+
+    .instrucoes {
+        padding-left: 0px;
+    }
+
+    .instrucoes2, .instrucoes {
+        display: block;
+        width: 100%;
+        margin-right: -4px;
+    }
+
+    .instrucoes2 .instru-box, .instrucoes .instru-box {
+        background-color: #ffffffbe;
+        display: block;  
+        align-items: center;
+        text-align: center;    
+        gap: 20px;
+
+        margin-bottom: 40px;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px;
+
+        box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, 
+        rgba(255, 255, 255, 0.3) -10px 10px, 
+        rgba(255, 255, 255, 0.2) -15px 15px, 
+        rgba(2255, 255, 255, 0.1) -20px 20px, 
+        rgba(255, 255, 255, 0.05) -25px 25px;
+        
+    }
+
+    .instrucoes2 .instru-box img, .instrucoes .instru-box img {
+        max-width: 50px;
+    }
+
+        /* Responsivo do Rodapé (Footer) */
+
+    footer {
+        padding: 20px;
+    }    
+
+    footer .top-footer button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 0 8px;
+        transition: .5s;
+        margin: 10px;
+    }
+
+    footer .bottom-footer p {
+        color: #fff;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+}

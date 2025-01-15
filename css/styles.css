@@ -24,7 +24,9 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
+
 /* Estilo do header */
 header{
     width: 100%;

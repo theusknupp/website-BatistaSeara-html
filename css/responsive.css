@@ -2,6 +2,11 @@
     header .Menu-Desktop, header .btn-contato{
         display: none; /*Escondendo menu*/
     }
+
+    header .btn-menu-mob {
+        display: block;
+    }
+    
 }
     
 @media screen and (max-width: 900px) { 
@@ -46,7 +51,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.486);
+        background-color: rgba(0, 0, 0, 0.575);
         width: 100%;
         height: 100%;
         z-index: 1; /* O position dos Z-INDEX precisam ser diferentes nas classes */

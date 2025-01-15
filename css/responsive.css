@@ -6,6 +6,10 @@
     
 @media screen and (max-width: 900px) { 
     /* Responsivo da Hero */
+    .hero-site .txt-BemVindo h1 {
+       margin-left: 17px;
+    }
+
     .hero-site .txt-BemVindo h1{
         font-size: 2.5em;
         line-height: 40px;
@@ -19,11 +23,35 @@
         color: bisque;
     }
 
-    .hero-site .txt-BemVindo p{
-        font-size: 20px;
+    .hero-site .txt-BemVindo p {
+        font-size: 18x;
         font-weight: 300;
-        margin: 20px 0;
+        margin: 20px 17px;
     }
+
+    /* Responsivo sobre nós */
+
+    .Sobre-Nos h3{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    .Sobre-Nos p {
+        margin: 20px 17px;
+        font-size: 16px;
+        font-weight: 300px;
+    }
+
+    .Sobre-Nos > .overlay { /* '>' para dizer que quer editar a classe overlay */
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.575);
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* O position dos Z-INDEX precisam ser diferentes nas classes */
+    }
+    
 
     /* Responsivo da Agenda */
 
@@ -58,64 +86,6 @@
 
     .AgendaSemanal .itens-container .txt-itens span1 {
         display: block;
-    }
-
-    /* Responsivo dos botões de contato */
-    section.contato {
-        background-color: #fff;
-        padding: 80px 0;
-        padding-bottom: 8;
-    }
-
-    .txt-contato, .icons-contato {
-        display: block; /*Botão e texto lado a lado*/
-        width: 100%;
-        padding-bottom: 30px;
-        text-align: center;
-    } 
-
-    .contato .txt-contato h3{
-        font-size: 2.5em;
-        line-height: 40px;
-    }
-
-    .contato .txt-contato span {
-        display: block;
-    }
-
-    .contato .icons-contato button p {
-        font-size: 16px;
-    }
-
-    .contato .icons-contato button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 60px;
-        
-        width: 100%;
-        height: 60px;
-        margin: 0 auto 20px auto;
-        border: 2px solid black;
-        border-radius: 4px;
-        
-        background-color: transparent;
-        cursor: pointer;
-
-        transition: 0.3s;
-    }
-
-    /* Responsivo sobre nós */
-
-    .Sobre-Nos h3{
-        font-size: 2.5em;
-        line-height: 40px;
-    }
-
-    .Sobre-Nos p {
-        margin: 20px 0;
-        font-size: 16px;
-        font-weight: 300px;
     }
 
     /* Responsivo células */
@@ -172,6 +142,52 @@
         max-width: 50px;
     }
 
+    /* Responsivo dos botões de contato */
+    section.contato {
+        background-color: #fff;
+        padding: 80px 0;
+        padding-bottom: 8;
+    }
+
+    .txt-contato, .icons-contato {
+        display: block; /*Botão e texto lado a lado*/
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+    } 
+
+    .contato .txt-contato h3{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
+    .contato .txt-contato span {
+        display: block;
+    }
+
+    .contato .icons-contato button p {
+        font-size: 16px;
+    }
+
+    .contato .icons-contato button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+        text-decoration: none;
+        
+        width: 90%;
+        height: 60px;
+        margin: 0 auto 20px auto;
+        border: 2px solid black;
+        border-radius: 4px;
+        
+        background-color: transparent;
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
         /* Responsivo do Rodapé (Footer) */
 
     footer {
@@ -179,8 +195,9 @@
     }    
 
     footer .top-footer button {
-        width: 40px;
-        height: 40px;
+        text-decoration: n;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         border: 2px solid #fff;
         background-color: transparent;

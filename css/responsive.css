@@ -60,6 +60,23 @@
 
     /* Responsivo da Agenda */
 
+    .AgendaSemanal .txt-Agenda {
+        margin-bottom: 30px;
+    }
+    
+    .AgendaSemanal .txt-Agenda h3 {
+        line-height: 45px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 3em;
+        color: rgb(37, 94, 158);
+    }
+
+    .AgendaSemanal .txt-Agenda span {
+       display: block;
+    }
+
+
     .AgendaSemanal .itens-container {
         flex-direction: column;
     }
@@ -147,10 +164,84 @@
         max-width: 50px;
     }
 
+     /* Responsivo das programações */
+
+    /* Programacoes */
+    /* Texto */
+    .txt-prog .texto {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .txt-prog .texto h3 {
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .txt-prog .texto h3 span {
+        display: block;
+        padding-bottom: 16px;
+    }
+
+    .txt-prog .texto p {
+        margin: 20px 17px;
+        font-size: 16px;
+    } 
+
+    .programacoes {
+        width: 100%; /* O contêiner ocupa toda a largura */
+        display: inline-block; /* Alinha os itens verticalmente */
+        padding: 5%;
+        opacity: 0; /* Inicialmente invisível */
+        transform: translateY(50px); /* Move para baixo inicialmente */
+        transition: all 4.5s ease-out;
+    }
+
+    .programacoes.show {
+        opacity: 1; /* Torna visível */
+        transform: translateY(0); /* Retorna à posição original */
+    }
+
+    .box-programacoes {
+        width: 80%; /* Cada caixa 80% a largura */
+        margin: 0 auto 50px auto; /* Adiciona espaçamento vertical entre as caixas */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .1);  
+        opacity: 0; /* Invisível inicialmente */
+        animation: fadeInMobile 0.5s ease-out forwards;
+    }
+
+    .box-programacoes > img {
+        width: 100%; /* Imagem ajustada ao novo tamanho da caixa */
+        height: auto; /* Altura automática para manter a proporção */
+        transition: transform 0.5s;
+    }
+
+    .box-programacoes > span {
+        font-size: 16px; /* Fonte ajustada para telas menores */
+        height: auto; /* Remove restrições de altura */
+        line-height: normal; /* Ajusta o espaçamento de linha */
+    }
+
+    .box-programacoes:hover > img {
+        transform: scale(1.3); /* Zoom na imagem ao passar o mouse */
+        transition: .5s;
+    }
+
+    @keyframes fadeInMobile {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* Responsivo dos botões de contato */
     section.contato {
         background-color: #fff;
-        padding: 80px 0;
+        padding: 50px 0;
         padding-bottom: 8;
     }
 
@@ -171,7 +262,7 @@
     }
 
     .contato .icons-contato button p {
-        font-size: 16px;
+        font-size: 15px;
         color: black;
         text-decoration: none;
     }
@@ -201,14 +292,14 @@
         text-decoration: none;
     }
 
-        /* Responsivo do Rodapé (Footer) */
+    /* Responsivo do Rodapé (Footer) */
 
     footer {
         padding: 20px;
     }    
 
     footer .top-footer button {
-        text-decoration: n;
+        text-decoration: none;
         width: 45px;
         height: 45px;
         border-radius: 50%;

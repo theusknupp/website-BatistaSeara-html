@@ -10,6 +10,11 @@
 }
     
 @media screen and (max-width: 900px) { 
+
+    .programacoes {
+        scroll-margin-top: 400px;
+    }
+
     /* Responsivo da Hero */
     .hero-site .txt-BemVindo h1 {
        margin-left: 17px;
@@ -241,6 +246,7 @@
     /* Responsivo dos botões de contato */
     section.contato {
         background-color: #fff;
+        margin-top: 60px;
         padding: 50px 0;
         padding-bottom: 8;
     }
@@ -295,7 +301,7 @@
     /* Responsivo do Rodapé (Footer) */
 
     footer {
-        padding: 20px;
+        padding: 40px;
     }    
 
     footer .top-footer button {

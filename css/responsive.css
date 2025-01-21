@@ -245,6 +245,7 @@
 
     /* Midia e Líve */
     .midia {
+        margin-top: 40px;
         width: 100%;
         padding: 40px 20px; /* Espaçamento interno da seção */
         display: block;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 950px) { /* Momento em que o menu se quebra */
+@media screen and (max-width: 1110px) { /* Momento em que o menu se quebra */
     header .Menu-Desktop, header .btn-contato{
         display: none; /*Escondendo menu*/
     }
@@ -243,10 +243,45 @@
         }
     }
 
+    /* Midia e Líve */
+    .midia {
+        width: 100%;
+        padding: 40px 20px; /* Espaçamento interno da seção */
+        display: block;
+        justify-content: center;
+        background-color: #01121F; /* Cor de fundo para a seção */
+    }
+
+    .midia .txt-multimidia {
+        padding: 30px;
+        color: bisque;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .opcoes-midia {
+        display: block;
+        gap: 40px; /* Espaçamento horizontal entre as divs */
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .fotos, .live {
+        flex: 1; /* Espaço proporcional */
+        padding: 20px; /* Espaçamento interno */
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border-radius: 8px; /* Cantos arredondados */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     /* Responsivo dos botões de contato */
     section.contato {
         background-color: #fff;
-        margin-top: 60px;
         padding: 50px 0;
         padding-bottom: 8;
     }

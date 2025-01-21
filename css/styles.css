@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section.Sobre-Nos, section.AgendaSemanal {
+section.Sobre-Nos, section.AgendaSemanal, .midia {
     scroll-margin-top: 100px; /* Espaço acima do início da rolagem */
 }
 
@@ -29,7 +29,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 4%;
-}
+}   
 
 /* Estilo do header */
 header{
@@ -99,7 +99,7 @@ list-style-type: none; /*Retirando as bolinhas da lista*/
 
 header .Menu-Desktop nav ul li {
     display: inline-block; /*Alinhar o NAV um do lado do outro*/
-    margin: 0 40px; /*Afastamento das opções*/
+    margin: 0 30px; /*Afastamento das opções*/
 } 
 
 /* Estilo do texto */
@@ -367,71 +367,60 @@ section.AgendaSemanal {
     rgba(1, 60, 128, 0.05) 25px 25px;
 }
 
-/* Estilo dos botões de contato */
-section.contato {
-    background-color: #fff;
-    padding: 80px 0;
-    padding-bottom: 8;
+/* Seção Celulas */
+
+section.Celulas {
+    padding: 80px;
+    background-color: #01121F;
 }
 
-.txt-contato, .icons-contato {
-    display: inline-block; /*Botão e texto lado a lado*/
+.Celulas .nossas-celulas h3 {
+    color: #fff;
+    padding-top: 30px;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.instrucoes2 {
+    padding-right: 30px;
+}
+
+.instrucoes {
+    padding-left: 30px;
+}
+
+.instrucoes2, .instrucoes {
+    display: inline-block;
     width: 50%;
     margin-right: -4px;
-    vertical-align: middle; /*Alinhando blocos*/
-    padding-bottom: 70px;
-} 
-
-.contato .txt-contato h3{
-    font-size: 2.5em;
-    font-weight: 200;
-    line-height: 50px;
-    margin-bottom: 20px;
+    vertical-align: top;
 }
 
-.contato .txt-contato h3 span{
-    display: block;
-    font-weight: 600;
-}
-
-.contato .icons-contato a {
-    text-decoration: none;
-}
-
-.contato .icons-contato button p {
-    font-size: 16px;
-}
-
-.contato .icons-contato button {
-    display: flex;
+/* Alinhando imagem e texto lado a lado da box */
+.instrucoes2 .instru-box, .instrucoes .instru-box {
+    background-color: #ffffffbe;
+    display: flex;  
     align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, 
+    rgba(255, 255, 255, 0.3) -10px 10px, 
+    rgba(255, 255, 255, 0.2) -15px 15px, 
+    rgba(2255, 255, 255, 0.1) -20px 20px, 
+    rgba(255, 255, 255, 0.05) -25px 25px;
     
-    width: 60%;
-    height: 60px;
-    margin: 0 auto 20px auto;
-    border: 2px solid black;
-    border-radius: 4px;
-    
-    background-color: transparent;
-    cursor: pointer;
-
-    transition: 0.3s;
 }
 
-.contato .icons-contato button i {
-    font-size: 24px;
+.instrucoes2 .instru-box img, .instrucoes .instru-box img {
+    max-width: 80px;
 }
-
-.contato .icons-contato button:hover {
-    background-color: rgba(0, 0, 0, 0.87)
-}
-
-.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
-    color: #fff;
-}
-
 
 /* Programacoes */
 /* Texto */
@@ -542,59 +531,147 @@ section.contato {
     }
 }
 
-/* Seção Celulas */
-
-section.Celulas {
-    padding: 80px;
-    background-color: #01121F;
+/* Midia e Líve */
+.midia {
+    width: 100%;
+    padding: 40px 20px; /* Espaçamento interno da seção */
+    display: flex;
+    justify-content: center;
+    background-color: #01121F; /* Cor de fundo para a seção */
 }
 
-.Celulas .nossas-celulas h3 {
-    color: #fff;
-    padding-top: 30px;
-    font-size: 3.5em;
-    font-weight: 600;
-    line-height: 50px;
-    margin-bottom: 40px;
+.midia .txt-multimidia {
+    padding: 30px;
+    color: bisque;
     text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.instrucoes2 {
-    padding-right: 30px;
+.opcoes-midia {
+    display: flex;
+    gap: 40px; /* Espaçamento horizontal entre as divs */
+    width: 100%;
 }
 
-.instrucoes {
-    padding-left: 30px;
+.fotos, .live {
+    flex: 1; /* Espaço proporcional */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 8px; /* Cantos arredondados */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.instrucoes2, .instrucoes {
-    display: inline-block;
+/* Imagem dentro de cada div */
+.img-fotos-box img, .img-live-box img {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+    margin-bottom: 15px; /* Espaço entre a imagem e o texto */
+}
+
+/* Título dentro de cada div */
+.txt-fotos-box h4, .txt-live-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d1d1d;
+}
+
+/* Texto das descrições */
+.txt-fotos-box p, .txt-live-box p {
+    font-size: 1rem;
+    color: #0a0a0a;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Botão de cada div */
+.btn-fotos button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff; /* Cor do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-fotos button:hover {
+    background-color: #01254b; /* Cor ao passar o mouse */
+}
+
+.fotos, .live {
+    background-color: #fff7f7;
+    margin-bottom: 40px;
+}
+
+
+/* Estilo dos botões de contato */
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+    padding-bottom: 8;
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block; /*Botão e texto lado a lado*/
     width: 50%;
     margin-right: -4px;
-    vertical-align: top;
+    vertical-align: middle; /*Alinhando blocos*/
+    padding-bottom: 70px;
+} 
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    font-weight: 200;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
 
-/* Alinhando imagem e texto lado a lado da box */
-.instrucoes2 .instru-box, .instrucoes .instru-box {
-    background-color: #ffffffbe;
-    display: flex;  
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .icons-contato button p {
+    font-size: 16px;
+}
+
+.contato .icons-contato button {
+    display: flex;
     align-items: center;
-    gap: 20px;
-
-    margin-bottom: 40px;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 10px;
-
-    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, 
-    rgba(255, 255, 255, 0.3) -10px 10px, 
-    rgba(255, 255, 255, 0.2) -15px 15px, 
-    rgba(2255, 255, 255, 0.1) -20px 20px, 
-    rgba(255, 255, 255, 0.05) -25px 25px;
+    justify-content: space-between;
+    padding: 0 60px;
     
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.instrucoes2 .instru-box img, .instrucoes .instru-box img {
-    max-width: 80px;
+.contato .icons-contato button i {
+    font-size: 24px;
+}
+
+.contato .icons-contato button:hover {
+    background-color: rgba(0, 0, 0, 0.87)
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
 }
 
 /* Estilo do Rodapé (Footer) */

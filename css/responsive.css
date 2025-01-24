@@ -243,9 +243,53 @@
         }
     }
 
+    section.devocional {
+        margin-top: 60px;
+        padding: 0 18px;
+        text-align: center;
+        height: auto; /* Altura dinâmica para conteúdo maior */
+        box-shadow: none;
+        padding-bottom: 30px;
+    }
+
+    .devocional .txt-devocional-principal {
+        padding-left: 56px; /* Remover padding lateral */
+        max-width: 100%; /* Usar toda a largura da tela */        
+        text-align: center; /* Garantir alinhamento central */
+    }
+
+    .devocional .txt-devocional-principal h3 {
+        font-size: 2.5em; /* Reduzir o tamanho do título */
+        padding-top: 20px;
+    }
+
+    .devocional .txt-devocional-principal p {
+        font-size: 16px; /* Reduzir o tamanho do subtítulo */
+    }
+
+    .devocional .txt-devocional span {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    .devocional .txt-devocional h1 {
+        font-size: 16px;
+        font-weight: normal;
+        padding-bottom: 5px;
+    }
+
+    .devocional .txt-devocional {
+        max-width: 95%; /* Usar a maior parte da largura da tela */
+    }
+
+    .devocional .txt-devocional p {
+        font-size: 14px; /* Reduzir o tamanho do texto */
+        text-align: center; /* Alinhar texto ao centro */
+    }
+
     /* Midia e Líve */
     .midia {
-        margin-top: 40px;
+        margin-top: 0px;
         width: 100%;
         padding: 40px 20px; /* Espaçamento interno da seção */
         display: block;
@@ -360,5 +404,4 @@
         margin-top: 6px;
         font-size: 12px;
     }
-
 }

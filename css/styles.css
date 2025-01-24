@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section.Sobre-Nos, section.AgendaSemanal, .midia {
+section.Sobre-Nos, section.AgendaSemanal, .midia, .devocional {
     scroll-margin-top: 100px; /* Espaço acima do início da rolagem */
 }
 
@@ -34,7 +34,7 @@ body {
 /* Estilo do header */
 header{
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0px;
     position: fixed;
     top: 0;
     left: 0;
@@ -99,7 +99,7 @@ list-style-type: none; /*Retirando as bolinhas da lista*/
 
 header .Menu-Desktop nav ul li {
     display: inline-block; /*Alinhar o NAV um do lado do outro*/
-    margin: 0 30px; /*Afastamento das opções*/
+    margin: 0 20px; /*Afastamento das opções*/
 } 
 
 /* Estilo do texto */
@@ -192,7 +192,7 @@ header .Menu-mobile nav ul {
 }
 
 header .Menu-mobile nav ul a {
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     color: white;
     padding: 20px 0;
@@ -442,9 +442,9 @@ section.Celulas {
 .programacoes {
     display: flex;
     width: 100%;
-    padding: 3% 2%; /* Adiciona espaçamento interno de 4% nas partes superior/inferior e 2% nas laterais. */
+    padding: 3% 5%; /* Adiciona espaçamento interno de 4% nas partes superior/inferior e 2% nas laterais. */
     box-sizing: border-box; /* Faz com que o padding seja incluído no cálculo da largura e altura. */
-    height: 70vh;
+    height: 65vh;
     margin-bottom: 60px;
     opacity: 0;
     transform: translateY(50px); /* 50Px abaixo */
@@ -460,11 +460,12 @@ section.Celulas {
     flex: 1; /* Mesmo espaço que ocupa no .programacoes */
     overflow: hidden; /* Conteudo que passar a caixa fique escondido */
     transition: .5s;
-    margin: 0 2%;
+    margin: 0 1.5%;
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     line-height: 0;
     opacity: 0; /* Inicialmente invisível */
     animation: fadeIn 4.5s ease-out forwards;
+    border-radius: 10px;
   }
 
 .box-programacoes:nth-child(1) {
@@ -484,7 +485,7 @@ section.Celulas {
 }
 
 .box-programacoes.item-4 { 
-    box-shadow: rgb(57, 138, 93) 0px 20px 30px -10px; 
+    box-shadow: rgb(57, 138, 93) 0px 20px 30px -10px
 } 
 
 .box-programacoes.item-5 { 
@@ -501,13 +502,13 @@ section.Celulas {
   
 .box-programacoes> img {
     width: 125%;
-    height: calc(100% - 10vh);
+    height: calc(100% - 8vh);
     object-fit: cover; 
     transition: .5s;
 }
   
 .box-programacoes > span {
-    font-size: 3.8vh;
+    font-size: 3vh;
     display: block;
     text-align: center;
     height: 10vh;
@@ -529,6 +530,76 @@ section.Celulas {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Devocionais  */
+/* Devocionais  */
+
+section.devocional {
+    height: 100vh; /* 100% da altura da tela */
+    background-image: url(../imgs/BackGround-devocional.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobrir todo o espaço */
+    background-position: center;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.devocional .interface {
+    display: flex;
+    flex-direction: column; /* Organizar os elementos em coluna */
+    align-items: flex-start; /* Garantir alinhamento à esquerda */
+    padding: 10px; /* Adicionar um espaçamento interno */
+    height: 100%;
+}
+
+.devocional .txt-devocional-principal {
+    text-align: center; /* Alinhar o título e subtítulo ao centro */   
+    padding-left: 202px;
+    max-width: 80%; /* Limitar a largura */
+    color:#302f2f ;
+}
+
+.devocional .txt-devocional-principal h3 {
+    padding-top: 50px;
+    font-size: 4em;
+    line-height: 1.2; /* Ajustar o espaçamento entre linhas */
+    font-weight: 600;
+}
+
+.devocional .txt-devocional-principal p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.devocional .txt-devocional {
+    margin: 25px 25px 0 25px; /* Margem para espaçamento adequado */
+    max-width: 57%; /* Limitar a largura horizontal do texto */
+}
+
+.devocional .txt-devocional span {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: hsl(35, 55%, 17%);
+    font-weight: normal;
+}
+
+.devocional .txt-devocional h1 {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: hsl(35, 55%, 17%);
+    font-weight: normal;
+}
+
+.devocional .txt-devocional p {
+    text-align: left;
+    margin-top: 25px; /* Espaçamento entre parágrafos */
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    line-height: 1.8; /* Melhorar a legibilidade */
+    color: hsl(35, 55%, 17%);
 }
 
 /* Midia e Líve */

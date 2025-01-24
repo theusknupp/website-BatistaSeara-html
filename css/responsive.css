@@ -253,7 +253,7 @@
     }
 
     .devocional .txt-devocional-principal {
-        padding-left: 62px; /* Remover padding lateral */
+        padding-left: 67px; /* Remover padding lateral */
         max-width: 100%; /* Usar toda a largura da tela */        
         text-align: center; /* Garantir alinhamento central */
     }

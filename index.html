@@ -24,6 +24,20 @@
 </head>
 <body>
 
+    <!-- aixa de texto-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+            <h3> Versiculo do Dia: </h3>
+            
+            <div id="dailyVersesWrapper"></div>
+            <script async defer src="https://dailyverses.net/get/verse.js?language=arc"></script> <!--Chamda da API de versiculo-->
+
+            <button id="amen-button" class="amen-button">Amém!</button>
+        </div>
+      </div>
+    </section>  
+
     <header id="header"> <!-- Cabeçalho(Menu) -->
 
         <div class="interface"> <!-- Estrutura do menu -->
@@ -34,7 +48,7 @@
             </section>
 
 
-            <section class="Menu-Desktop">
+            <section class="Menu-Desktop" id="Menu-Desktop">
                 <nav>  <!-- Menu da navegação -->
                   <ul> <!-- Lista não ordenada-->
                     <li><a href="#Sobre-nos">Sobre nós</a></li><!-- /li para Listar itens da lista-->
@@ -407,7 +421,6 @@
                             
     
             </article>
-    
             </div>
 
             <!--Rodapé-->

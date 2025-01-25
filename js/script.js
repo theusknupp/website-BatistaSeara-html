@@ -32,3 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(programacoesSection);
 });
+
+// Selecionar os elementos
+const modal = document.getElementById("modal");
+const closeButton = document.querySelector(".close-button");
+const amenButton = document.getElementById("amen-button");
+
+
+// Fechar o modal ao clicar no botão "Amém"
+amenButton.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Mostrar o modal ao carregar o site
+window.onload = () => {
+  modal.style.display = "flex"; // Exibe o modal
+};
+
+// Fechar o modal ao clicar no botão de fechar
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Fechar o modal ao clicar fora dele
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});

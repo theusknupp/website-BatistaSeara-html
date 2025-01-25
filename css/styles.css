@@ -29,7 +29,72 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 4%;
-}   
+}
+
+/* Caixa de texto inicial */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 1000; /* Modal em cima de outros elementos */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .modal-content h3 {
+    padding: 10px;
+  }
+
+  .modal-content {
+    background-color: #ffffffda; /* Fundo branco com leve transparência */
+    padding: 20px; /* Espaçamento interno de 20px ao redor do conteúdo */
+    border-radius: 8px;
+    width: 80%; /* Largura do modal fixada em 70% da tela */
+    text-align: center;
+
+    animation: fadeIn 0.5s ease;
+    box-shadow: rgb(185, 198, 255) 0px 15px 25px -10px;
+  }
+  
+  .close-button {
+    position: absolute; /* Posiciona o botão de fechar de forma absoluta dentro do modal */
+    top: 10px; /* Alinha o botão de fechar 10px abaixo do topo do modal */
+    right: 10px;  /* Alinha o botão de fechar 10px à direita */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Começa com opacidade 0 */
+      transform: scale(0.9); /* Começa com uma escala reduzida */
+    }
+    to {
+      opacity: 1; /* Aumenta a opacidade para 1 */
+      transform: scale(1); /* Restaura a escala normal */
+    }
+  }
+
+  .amen-button {
+    margin-top: 20px;
+    background-color: rgb(253, 200, 136); /* Amarelo */
+    color: black;
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px;
+    padding: 8px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Remove a borda do botão */
+  }
+
+  .amen-button:hover {
+    background-color:rgb(248, 179, 94); /* Amarelo mais escuro ao passar o mouse */
+    color: #000;
+  }
+
 
 /* Estilo do header */
 header{
@@ -745,6 +810,11 @@ section.contato {
     color: #fff;
 }
 
+section.versiculo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 /* Estilo do Rodapé (Footer) */
 footer {
     background-color: #000;
@@ -802,4 +872,3 @@ footer .bottom-footer .icons-dev button {
     cursor: pointer;
     transition: .5s;
 }
-

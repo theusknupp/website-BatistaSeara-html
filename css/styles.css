@@ -164,7 +164,7 @@ list-style-type: none; /*Retirando as bolinhas da lista*/
 
 header .Menu-Desktop nav ul li {
     display: inline-block; /*Alinhar o NAV um do lado do outro*/
-    margin: 0 20px; /*Afastamento das opções*/
+    margin: 0 12px; /*Afastamento das opções*/
 } 
 
 /* Estilo do texto */
@@ -288,7 +288,7 @@ body.no-overflow {
 /* Seção bem vindo */
 section.hero-site{
     height: 100vh; /*100% da altura da tela*/
-    background-image: url(../imgs/BackGround2.png);
+    background-image: url(../imgs/backgroundofc.png);
     background-repeat: no-repeat;
     background-size: cover; /*Cobrir todo o espaço*/
     background-position: center;
@@ -310,6 +310,7 @@ section.hero-site{
 
 /* Jogar o 'Seara' pra baixo  */
 .hero-site .txt-BemVindo h1 span{
+    text-shadow: 0 0 0.1em rgb(248, 248, 248);
     display: block;
     font-weight: 700;
     color: bisque;
@@ -601,7 +602,9 @@ section.Celulas {
 /* Devocionais  */
 
 section.devocional {
-    height: 100vh; /* 100% da altura da tela */
+    height: auto; 
+    min-height: 900px;
+    overflow: hidden;
     background-image: url(../imgs/BackGround-devocional.png);
     background-repeat: no-repeat;
     background-size: cover; /* Cobrir todo o espaço */
@@ -615,7 +618,6 @@ section.devocional {
     flex-direction: column; /* Organizar os elementos em coluna */
     align-items: flex-start; /* Garantir alinhamento à esquerda */
     padding: 10px; /* Adicionar um espaçamento interno */
-    height: 100%;
 }
 
 .devocional .txt-devocional-principal {
@@ -665,6 +667,7 @@ section.devocional {
     font-size: 16px; /* Ajuste do tamanho da fonte */
     line-height: 1.8; /* Melhorar a legibilidade */
     color: hsl(35, 55%, 17%);
+    margin-bottom: 30px;
 }
 
 /* Midia e Líve */

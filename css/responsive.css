@@ -252,18 +252,11 @@
         padding-bottom: 30px;
     }
 
-    .devocional .txt-devocional-principal {
-        padding-left: 62px; /* Remover padding lateral */
-        max-width: 100%; /* Usar toda a largura da tela */        
-        text-align: center; /* Garantir alinhamento central */
+    .devocional .txt-devocional h3 {
+        font-size: 2em;
     }
 
-    .devocional .txt-devocional-principal h3 {
-        font-size: 2.5em; /* Reduzir o tamanho do título */
-        padding-top: 20px;
-    }
-
-    .devocional .txt-devocional-principal p {
+    .devocional .txt-devocional h2 {
         font-size: 16px; /* Reduzir o tamanho do subtítulo */
     }
 

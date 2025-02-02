@@ -620,24 +620,22 @@ section.devocional {
     padding: 10px; /* Adicionar um espaçamento interno */
 }
 
-.devocional .txt-devocional-principal {
-    text-align: center; /* Alinhar o título e subtítulo ao centro */   
-    padding-left: 202px;
-    max-width: 80%; /* Limitar a largura */
-    color:#302f2f ;
-}
-
-.devocional .txt-devocional-principal h3 {
+.devocional .txt-devocional h3 {
+    text-align: center;
     padding-top: 50px;
     font-size: 4em;
     line-height: 1.2; /* Ajustar o espaçamento entre linhas */
     font-weight: 600;
+    color:#302f2f ;
 }
 
-.devocional .txt-devocional-principal p {
+.devocional .txt-devocional h2 {
+    color:#302f2f ;
+    text-align: center;
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .devocional .txt-devocional {
@@ -667,7 +665,7 @@ section.devocional {
     font-size: 16px; /* Ajuste do tamanho da fonte */
     line-height: 1.8; /* Melhorar a legibilidade */
     color: hsl(35, 55%, 17%);
-    margin-bottom: 30px;
+    margin-bottom: 30px ;
 }
 
 /* Midia e Líve */

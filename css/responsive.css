@@ -243,8 +243,9 @@
         }
     }
 
+    /* Responsivo devocional */
     section.devocional {
-        margin-top: 60px;
+        margin-top: 45px;
         padding: 0 18px;
         text-align: center;
         height: auto; /* Altura dinâmica para conteúdo maior */
@@ -253,11 +254,11 @@
     }
 
     .devocional .txt-devocional h3 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .devocional .txt-devocional h2 {
-        font-size: 16px; /* Reduzir o tamanho do subtítulo */
+        font-size: 18px; /* Reduzir o tamanho do subtítulo */
     }
 
     .devocional .txt-devocional span {
